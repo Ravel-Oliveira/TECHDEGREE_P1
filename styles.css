@@ -100,7 +100,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #7cc76a;
+  border-color: #ff99ff;
 }
 
 ul.skills {
@@ -178,6 +178,7 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+      flex-wrap: wrap;
   }
 
   header {
@@ -206,7 +207,9 @@ a.social:hover {
 
 }
 
-header .profile-image-experience {
+/* hobby.html styles */
+
+header .profile-image-hobby {
   display: inline-block;
   background-image: url(images/me.jpg);
   background-size: cover;
@@ -217,14 +220,24 @@ header .profile-image-experience {
   border: 3px solid white;
   transition: all .5s;
 }
-header .profile-image-experience:hover {
+header .profile-image-hobby:hover {
   transform: scale(1.2) rotate(5deg);
   background: url(images/me-hobby.jpg);
   background-size: cover;
 }
 
-header:has(.profile-image-experience:hover) {
-  /* transform: scale(1.2) rotate(5deg); */
+header:has(.profile-image-hobby:hover) {
   background: url(images/concert.jpg);
   background-size: cover;
+}
+
+.location-hobby {
+  background-color: #222;
+  color: yellow;
+  transition: all .5s;
+}
+
+.profile-image-hobby:hover ~ .location-hobby {
+  background-color: #682483;
+  color: rgb(255, 238, 0);
 }
