@@ -231,13 +231,34 @@ header:has(.profile-image-hobby:hover) {
   background-size: cover;
 }
 
+.profile-image-hobby:hover .location-hobby-hidden {
+  visibility: visible;
+}
+
+.location-hobby-hidden {
+  background-color: #222;
+  color: yellow;
+  position: inherit;
+  opacity: 0;
+  z-index: 10;
+  transition: all .5s;
+}
+
 .location-hobby {
   background-color: #222;
   color: yellow;
+  opacity: 1;
   transition: all .5s;
 }
 
 .profile-image-hobby:hover ~ .location-hobby {
   background-color: #682483;
   color: rgb(255, 238, 0);
+  opacity: 0;
+}
+
+.profile-image-hobby:hover ~ .location-hobby-hidden {
+  background-color: #682483;
+  color: rgb(255, 238, 0);
+  opacity: 1;
 }
