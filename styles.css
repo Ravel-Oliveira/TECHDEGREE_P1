@@ -252,8 +252,6 @@ header:has(.profile-image-hobby:hover) {
 }
 
 .profile-image-hobby:hover ~ .location-hobby {
-  background-color: #682483;
-  color: rgb(255, 238, 0);
   opacity: 0;
 }
 
@@ -261,4 +259,18 @@ header:has(.profile-image-hobby:hover) {
   background-color: #682483;
   color: rgb(255, 238, 0);
   opacity: 1;
+}
+
+details > summary {
+  cursor: pointer;
+}
+
+.spotify {
+  text-decoration: none;
+  color: white;
+  transition: all .5s;
+}
+
+.spotify:hover {
+  color: #ccc;
 }
