@@ -207,6 +207,10 @@ a.social:hover {
 
 }
 
+
+
+
+
 /* hobby.html styles */
 
 header .profile-image-hobby {
@@ -283,4 +287,16 @@ details > summary {
 .pull-up-image {
   width: 50%;
   height: 30%;
+}
+
+.game-icons {
+  width: 48px;
+  height: 48px;
+}
+
+.container-icons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
