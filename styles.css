@@ -297,6 +297,7 @@ details > summary {
 .container-icons {
   display: flex;
   justify-content: center;
+  padding-top: 16px;
   gap: 8px;
   flex-wrap: wrap;
 }
