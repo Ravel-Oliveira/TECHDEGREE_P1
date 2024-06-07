@@ -274,3 +274,13 @@ details > summary {
 .spotify:hover {
   color: #ccc;
 }
+
+.container-img {
+  display: flex;
+  justify-content: center;
+}
+
+.pull-up-image {
+  width: 50%;
+  height: 30%;
+}
