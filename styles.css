@@ -301,3 +301,7 @@ details > summary {
   gap: 8px;
   flex-wrap: wrap;
 }
+
+.header-hobby {
+  box-shadow: 0 0 6px 0 #727171;
+}
